@@ -3,6 +3,13 @@
 
 ## Getting Started
 
+## Step1: Clone the repository
+
+```
+git clone https://github.com/collabnix/kafka-kubernetes-docker-desktop
+```
+
+
 ## Step 1: Deploy Namespace
 
 ```
