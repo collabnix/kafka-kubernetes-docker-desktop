@@ -10,13 +10,13 @@ git clone https://github.com/collabnix/kafka-kubernetes-docker-desktop
 ```
 
 
-## Step 1: Deploy Namespace
+## Step 2: Deploy Namespace
 
 ```
 kubectl apply -f 00-namespace.yaml
 ```
 
-## Step 2. Deploy Zookeeper
+## Step 3. Deploy Zookeeper
 
 ```
 kubectl apply -f 01-zookeeper.yaml
@@ -43,7 +43,7 @@ kafka-broker-67c868fc47-rzrzh   1/1     Running   0          30s
 zookeeper-654bbcd6cc-p5xfz      1/1     Running   0          2m54s
 ```
 
-## Enable Port Forwarding
+## Step 4. Enable Port Forwarding
 
 ```
 kubectl port-forward kafka-broker-67c868fc47-rzrzh 9092 -n kafka
