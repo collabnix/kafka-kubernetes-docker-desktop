@@ -36,3 +36,11 @@ kafka-broker-67c868fc47-rzrzh   1/1     Running   0          30s
 zookeeper-654bbcd6cc-p5xfz      1/1     Running   0          2m54s
 ```
 
+## Enable Port Forwarding
+
+```
+kubectl port-forward kafka-broker-67c868fc47-rzrzh 9092 -n kafka
+Forwarding from 127.0.0.1:9092 -> 9092
+Forwarding from [::1]:9092 -> 9092
+```
+
